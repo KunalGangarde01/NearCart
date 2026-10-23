@@ -1,0 +1,19 @@
+{
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.wordBasedSuggestionsMode": "matchingDocuments",
+  "editor.parameterHints.enabled": true,
+  "editor.hover.enabled": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "java.completion.enabled": true,
+  "java.autobuild.enabled": true
+}

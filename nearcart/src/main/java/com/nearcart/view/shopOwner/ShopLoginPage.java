@@ -2,8 +2,8 @@ package com.nearcart.view.shopOwner;
 import com.nearcart.view.SplashPage;
 import com.nearcart.view.admin.AdminLoginPage;
 import com.nearcart.view.rider.RiderLoginPage;
+import com.nearcart.view.shopOwner.Dashboard.ShopSidebarNavbar;
 import com.nearcart.view.user.UserLoginPage;
-import com.nearcart.view.user.UserSignUpPage;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -254,6 +254,17 @@ public class ShopLoginPage {
         submitBtn.setMaxWidth(Double.MAX_VALUE);
         submitBtn.setStyle("-fx-background-color: linear-gradient(to right, #4f46e5, #6366f1); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 13px; -fx-background-radius: 10px; -fx-padding: 10px 0; -fx-cursor: hand; -fx-font-family: System;");
        
+        submitBtn.setOnAction(e ->{
+            Runnable obj = new Runnable() {
+                @Override 
+                public void run(){
+                    SplashPage.primaryStage.setScene(shoplogScene);
+                }
+            };
+            ShopSidebarNavbar shopObj = new ShopSidebarNavbar();
+            SplashPage.primaryStage.setScene(shopObj.getShopShellScene(obj));
+        });
+
         // Role Selection
         Label roleLabel = new Label("SELECT YOUR ROLE / PORTAL");
         roleLabel.setStyle("-fx-text-fill: #94a3b8; -fx-font-size: 10px; -fx-font-weight: bold; -fx-font-family: System;");
@@ -340,7 +351,7 @@ public class ShopLoginPage {
             SplashPage.primaryStage.setScene(admin.getAdminLoginScene(obj));
         });
 
-        
+
         Label supportLabel = new Label("Pune 24/7 Support: 1800-NEAR-CART");
         supportLabel.setStyle("-fx-text-fill: #64748b; -fx-font-size: 11px; -fx-font-family: System;");
 

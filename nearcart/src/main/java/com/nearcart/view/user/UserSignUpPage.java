@@ -12,7 +12,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -74,6 +73,7 @@ public class UserSignUpPage {
         f1Card.setAlignment(Pos.CENTER_LEFT);
         f1Card.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 8px; -fx-border-color: #e2e8f0; -fx-border-radius: 8px; -fx-padding: 8px 10px;");
 
+        
         // Feature  2
         StackPane f2Circle = new StackPane(new Label("🏬"));
         f2Circle.setPrefSize(28, 28);

@@ -2,11 +2,8 @@ package com.nearcart.view.shopOwner;
 
 import com.nearcart.view.SplashPage;
 import com.nearcart.view.admin.AdminLoginPage;
-import com.nearcart.view.rider.RiderLoginPage;
 import com.nearcart.view.rider.RiderSignUpPage;
-import com.nearcart.view.user.UserLoginPage;
 import com.nearcart.view.user.UserSignUpPage;
-
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;

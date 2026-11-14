@@ -39,7 +39,7 @@ public class SplashPage extends Application {
 
         VBox vb = new VBox(30,tx,loginButton);
         vb.setStyle("-fx-alignment:center;");
-        Scene spalshSc = new Scene(vb,1550,850);
+        Scene spalshSc = new Scene(vb,1250,850);
         splashScene = spalshSc;
         primaryStage.setScene(spalshSc);
         primaryStage.show();

@@ -1,8 +1,11 @@
 package com.nearcart.view.admin;
 
 import com.nearcart.view.SplashPage;
+import com.nearcart.view.admin.Dashboard.AdminDashboard;
+import com.nearcart.view.admin.Dashboard.AdminSideNavBar;
 import com.nearcart.view.rider.RiderLoginPage;
 import com.nearcart.view.shopOwner.ShopLoginPage;
+
 import com.nearcart.view.user.UserLoginPage;
 import com.nearcart.view.user.UserSignUpPage;
 
@@ -23,7 +26,7 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
 public class AdminLoginPage {
-    public Scene adminlogScene;
+    public static Scene adminlogScene;
 
     public Scene getAdminLoginScene(Runnable backToSplash) {
 
@@ -234,10 +237,24 @@ public class AdminLoginPage {
 
         VBox formGroup = new VBox(10, emailBox, passBox, optionsRow);
 
-        // Buttons
+        // Admin Login Buttons
         Button submitBtn = new Button("Sign In to Platform Admin");
         submitBtn.setMaxWidth(Double.MAX_VALUE);
         submitBtn.setStyle("-fx-background-color: linear-gradient(to right, #4f46e5, #6366f1); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 13px; -fx-background-radius: 10px; -fx-padding: 10px 0; -fx-cursor: hand; -fx-font-family: System;");
+
+
+        submitBtn.setOnAction(e ->{
+            Runnable obj = new Runnable() {
+                @Override 
+                public void run(){
+                    SplashPage.primaryStage.setScene(adminlogScene);
+                }
+            };
+            AdminSideNavBar adminObj = new AdminSideNavBar();
+            SplashPage.primaryStage.setScene(adminObj.getSideBar(obj));
+        });
+
+
 
         // Role Selection
         Label roleLabel = new Label("SELECT YOUR ROLE / PORTAL");
@@ -345,7 +362,7 @@ public class AdminLoginPage {
         HBox root = new HBox(LeftSide, RightSide);
         root.setStyle("-fx-box-border: transparent; -fx-background-color: transparent;");
 
-        Scene AdminLoginScene = new Scene(root, 1550, 850);
+        Scene AdminLoginScene = new Scene(root, 1050, 850);
         adminlogScene = AdminLoginScene;
         return AdminLoginScene;
     }

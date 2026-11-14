@@ -3,9 +3,8 @@ package com.nearcart.view.rider;
 
 import com.nearcart.view.SplashPage;
 import com.nearcart.view.admin.AdminLoginPage;
-import com.nearcart.view.shopOwner.ShopLoginPage;
+
 import com.nearcart.view.shopOwner.ShopSignUpPage;
-import com.nearcart.view.user.UserLoginPage;
 import com.nearcart.view.user.UserSignUpPage;
 
 import javafx.geometry.Pos;

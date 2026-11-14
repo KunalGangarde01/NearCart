@@ -362,7 +362,7 @@ public class RiderLoginPage {
         HBox root = new HBox(LeftSide, RightSide);
         root.setStyle("-fx-box-border: transparent; -fx-background-color: transparent;");
 
-        Scene RiderLoginScene = new Scene(root, 1550, 850);
+        Scene RiderLoginScene = new Scene(root, 1050, 850);
         riderlogScene = RiderLoginScene;
         return RiderLoginScene;
     }

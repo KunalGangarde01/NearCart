@@ -352,7 +352,7 @@ public class UserLoginPage {
         HBox root = new HBox(LeftSide, RightSide);
         root.setStyle("-fx-box-border: transparent; -fx-background-color: transparent;");
 
-        Scene UserLoginScene = new Scene(root, 1550, 850);
+        Scene UserLoginScene = new Scene(root, 1050, 850);
         userlogScene = UserLoginScene;
         return UserLoginScene;
     }

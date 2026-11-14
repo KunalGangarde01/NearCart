@@ -373,7 +373,7 @@ public class ShopLoginPage {
         // root.setDividerPositions(0.55);
         root.setStyle("-fx-box-border: transparent; -fx-background-color: transparent;");
 
-        Scene ShopLoginScene = new Scene(root, 1550, 850);
+        Scene ShopLoginScene = new Scene(root, 1050, 850);
         shoplogScene = ShopLoginScene;
         return ShopLoginScene;
     }
